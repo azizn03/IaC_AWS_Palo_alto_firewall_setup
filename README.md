@@ -50,7 +50,7 @@ The configuration in the Palo Alto firewall side to configure the network instan
 
 ## Current issues
 
-- If you exit out the container before running the stop.sh script, you will need to delete the key-pair and run the ```start.sh``` script to generate a new one if you want to ssh into the server or if you have not ran the ```panos_init.sh``` script yet.
+- If you exit out the container before running the stop.sh script, you will need to delete the key-pair in the AWS console and run the ```start.sh``` script to generate a new one if you want to ssh into the server or if you have not ran the ```panos_init.sh``` script yet.
 - If during the ```start.sh``` you receive an error about a duplicate bucket name, this will need to be resolved by giving a new random set of characters in the file terragrunt/terragrunt.hcl line 30.
 - The resouces created from the remote state i.e. dynamoDB table and s3 bucket need to be manually deleted.
 
