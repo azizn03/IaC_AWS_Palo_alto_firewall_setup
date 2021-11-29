@@ -12,7 +12,7 @@ The configuration in the Palo Alto firewall side to configure the network interf
 
 ## Prerequisites:
 
-- Suscribe to the PAN-OS AMI bundle 1 on the AWS account you will be using the following link: 
+- Suscribe to the PAN-OS AMI bundle 1 on the AWS account you will be using: 
 ```https://aws.amazon.com/marketplace/pp?sku=e9yfvyj3uag5uo5j2hjikv74n```
 
 - Fill in the env-file in the root folder where appropriate as follows:
