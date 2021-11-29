@@ -8,7 +8,7 @@ The goal of this project was to replicate the solution shown above in the video 
 
 Creates 3 subnets, one management subnet where the Palo alto firewall instance sits and is accessed through. A private subnet where your application would sit and traffic is routed through the firewall. Finally a public subnet which is connected to an IGW, providing internet access and access to the private subnet through the firewall. Essentially creating a firewall platform using the Palo alto firewall VM.
 
-The configuration in the Palo Alto firewall side to configure the instances to pass traffic is still work in progres.
+The configuration in the Palo Alto firewall side to configure the network instances via terraform to pass traffic is still work in progress.
 
 ## Prerequisites:
 
