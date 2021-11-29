@@ -8,7 +8,7 @@ The goal of this project was to replicate the solution shown above in the video 
 
 Creates 3 subnets, one management subnet where the Palo alto firewall instance sits and is accessed through. A private subnet where your application would sit and traffic is routed through the firewall. Finally a public subnet which is connected to an IGW, providing internet access and access to the private subnet through the firewall. Essentially creating a firewall platform using the Palo alto firewall VM.
 
-The configuration in the Palo Alto firewall side to configure the network instances via terraform to pass traffic is still work in progress.
+The configuration in the Palo Alto firewall side to configure the network interfaces via terraform to pass traffic is still work in progress.
 
 ## Prerequisites:
 
@@ -40,7 +40,7 @@ The configuration in the Palo Alto firewall side to configure the network instan
 
 - Run the following command to build the container: 
 ```docker build . -t panos_image```
-- Run the following command to then attach inside the running container
+- Run the following command to run then attach inside the running container
 ```docker run --env-file ./env-file --name panos_container -v $pwd:/terragrunt -it --rm panos_image bash```
 - Run the ```start.sh``` script to bring up the infrastructure on aws.
 - wait 10mins for PAN_OS to finish booting up after the infrastructure has finished building.
